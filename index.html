@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación del Tiempo</title>
+    <!-- Importar Tailwind CSS desde el CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100 flex items-center justify-center min-h-screen">
+    <div class="bg-white p-8 rounded shadow-lg max-w-md w-full">
+        <h1 class="text-2xl font-bold text-center mb-4">Consulta el Clima</h1>
+        <form id="weatherForm" class="space-y-4">
+            <input id="city" type="text" placeholder="Ciudad" class="w-full p-2 border border-gray-300 rounded" required>
+            <input id="country" type="text" placeholder="País" class="w-full p-2 border border-gray-300 rounded" required>
+            <button type="submit" class="w-full bg-blue-500 text-white p-2 rounded">Obtener Clima</button>
+        </form>
+        <div id="weatherResult" class="mt-6 text-center"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
